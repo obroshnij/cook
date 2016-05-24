@@ -1,0 +1,19 @@
+<%= render 'shared/global_navigation'%>
+
+<div>
+          <span><%= image_tag @category.image, class: "img-cat-header" %></span>
+          <span><span class="caption">
+            <span class="caption-wrapper">
+              <span class='inline-element'>
+                <div class='product-details'>
+                  <span class="caption-info">              
+              <h1 class="animated bounceInUp cat-head-right"><%= @category.name %></h1>
+              <p class="animated bounceInLeft cat-subhead-right"><%= @category.description %></p></span></div>
+              </span>
+            </span>
+          </span>
+          <div id="foods"  class=" clearfix grid"> 
+            <%= render partial: 'product_grid' %>
+          </div>
+        </span>
+</div>

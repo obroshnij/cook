@@ -1,0 +1,8 @@
+production:
+  cloud_name: "dj4vgvqax"
+  api_key: "677647541622791"
+  api_secret: "VeQroE1P_m3ubcmulyCrb3pMOF0"
+development:
+  cloud_name: "dj4vgvqax"
+  api_key: "677647541622791"
+  api_secret: "VeQroE1P_m3ubcmulyCrb3pMOF0"

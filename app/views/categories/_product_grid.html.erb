@@ -1,0 +1,10 @@
+<% @category.products.try(:each) do |product| %>
+    <figure class="effect-oscar  wowload fadeInUp img-normalizer">
+        <%= image_tag product.image %>
+        <figcaption>
+            <h2><%= product.name %></h2>
+            <p><%= product.description %><br>
+            <%= link_to 'Больше', product_path(product) %></p>            
+        </figcaption>
+    </figure>
+<% end %>

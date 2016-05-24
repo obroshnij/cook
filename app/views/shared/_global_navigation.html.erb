@@ -1,0 +1,40 @@
+<div class="topbar animated fadeInLeftBig"></div>
+<!-- Header Starts -->
+<div class="navbar-wrapper">
+      <div class="container">
+
+        <div class="navbar navbar-inverse navbar-fixed-top" role="navigation" id="top-nav">
+          <div class="container">
+            <div class="navbar-header">
+              <!-- Logo Starts -->
+              <%= link_to image_tag('logo.png', class: "logo-header"), root_path %>
+              <!-- #Logo Ends -->
+
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+            </div>
+            <!-- Nav Starts -->
+            <div class="navbar-collapse  collapse">
+              <ul class="nav navbar-nav navbar-right">
+                 <li class="active"><a href="#home"></a></li>
+                 <li><%= link_to 'Главная', root_path(anchor: 'home') %></li>
+                 <li><%= link_to 'Кто мы?', root_path(anchor: 'menu') %></li>
+                 <li><%= link_to 'Продукция и цены', root_path(anchor: 'foods') %></li>
+                 <li><%= link_to 'Партнеры', root_path(anchor: 'partners') %></li>
+                 <li><%= link_to 'Контакты и заказ', root_path(anchor: 'contact') %></li>
+              </ul>
+              <p class="notice"><%= notice %></p>
+              <p class="alert"><%= alert %></p>
+            </div>
+            <!-- #Nav Ends -->
+
+          </div>
+        </div>
+
+      </div>
+    </div>

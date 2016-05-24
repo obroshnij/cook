@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+  <title>Печеньице - заказ домашней выпечки в Харькове</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <!-- Google fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Josefin+Sans:600' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Comfortaa&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+	<!-- font awesome -->
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+	<!-- bootstrap -->
+	<%= stylesheet_link_tag 'bootstrap.min', media: 'all', 'data-turbolinks-track' => true %>
+
+	<!-- animate.css -->
+	<%= stylesheet_link_tag 'animate', media: 'all', 'data-turbolinks-track' => true %>
+
+	<%= stylesheet_link_tag 'set', media: 'all', 'data-turbolinks-track' => true %>
+
+
+	<!-- gallery -->
+	<%= stylesheet_link_tag 'blueimp-gallery.min', media: 'all', 'data-turbolinks-track' => true %>
+
+	<!-- favicon -->
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+	<%= stylesheet_link_tag 'style', media: 'all', 'data-turbolinks-track' => true %>
+
+  <%= csrf_meta_tags %>
+</head>
+<body>
+		
+<%= yield %>
+
+<!-- wow script -->
+<%= javascript_include_tag 'wow.min', 'data-turbolinks-track' => true %>
+<!-- jquery -->
+<%= javascript_include_tag 'jquery', 'data-turbolinks-track' => true %>
+<!-- boostrap -->
+<%= javascript_include_tag 'bootstrap', 'data-turbolinks-track' => true %>
+<!-- jquery mobile -->
+<%= javascript_include_tag 'touchSwipe.min', 'data-turbolinks-track' => true %>
+<%= javascript_include_tag 'respond', 'data-turbolinks-track' => true %>
+<!-- gallery -->
+<%= javascript_include_tag 'jquery.blueimp-gallery.min', 'data-turbolinks-track' => true %>
+<!-- custom script -->
+<%= javascript_include_tag 'script', 'data-turbolinks-track' => true %>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<div id="contact" class="spacer">
+<!--Contact Starts-->
+<div class=" contactform center">
+<h2 class="text-center  wowload fadeInUp">Хотите сделать заказ?</h2>
+  <div class="row wowload fadeInLeftBig">      
+      <div class="">      
+        <%= form_for Order.new do |f| %>
+        	<%= f.text_area :order_info, size: '30x10', placeholder: "Что бы Вы хотели заказать?" %>
+        	<%= f.text_field :contact_info, placeholder: "Как с Вами связаться?", maxlength: 200, class: 'contact-string' %>
+        	<%= button_tag( :class => "btn btn-primary") do %>
+  				Сделать заказ <i class="fa fa-paper-plane"></i>
+			<% end %>
+		<% end %>
+      </div>
+  </div>
+</div>
+
+</div>

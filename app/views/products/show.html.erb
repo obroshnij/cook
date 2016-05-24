@@ -1,0 +1,78 @@
+<%= render 'shared/global_navigation'%>
+
+<div id="wrap">
+    <div id="left_col">
+    	<% @product.product_images.try(:each) do |item| %>
+    	<div>
+        	<%= image_tag item.image, class: 'product-image' %>
+        </div>
+        <% end %>
+    </div>
+    <div id="right_col">
+    	<div class='product-details product-top-margin'>
+	    	<%= link_to @product.category.name, category_path(@product.category), class: 'linked_text' %>
+	    	<h2 class='product-header bounceInUp animated product-head'>
+	    		<%= @product.name %>
+	    	</h2>
+	    	<p class='product-description bounceInLeft animated'>
+	    		<%= @product.description %>
+	    	</p>
+	    </div>
+	    <div class="col-sm-6 wowload fadeInRight product-details" style='width: 90%;'>
+      		<!-- menus -->
+      		<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+			  <div class="panel panel-default">
+			    <div class="panel-heading" role="tab">
+			      <h4 class="panel-title">
+			        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+			         <i class="fa fa-birthday-cake"></i> Описание
+			        </a>
+			      </h4>
+			    </div>
+			    <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-expanded="true">
+			      <div class="panel-body">
+			        <p><%= @product.long_description %></p>
+			      </div>
+			    </div>
+			  </div>
+			  <div class="panel panel-default">
+			    <div class="panel-heading" role="tab">
+			      <h4 class="panel-title">
+			        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+			         <i class="fa fa-info-circle"></i> Вкус и ингредиенты
+			        </a>
+			      </h4>
+			    </div>
+			    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel">
+			      <div class="panel-body">
+			        <p><%= @product.ingredients %></p>
+			      </div>
+			    </div>
+			  </div>
+			  <div class="panel panel-default">
+			    <div class="panel-heading" role="tab">
+			      <h4 class="panel-title">
+			        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+			         <i class="fa fa-money"></i> Цена
+			        </a>
+			      </h4>
+			    </div>
+			    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel">
+			      <div class="panel-body">
+			        <p><%= @product.price.round if @product.price %> грн.</p>
+			      </div>
+			    </div>
+			  </div>
+
+			</div>
+<%= render 'shared/product_order' %>
+
+
+      <!-- menus -->
+
+  </div>
+
+
+
+    </div>
+</div>
