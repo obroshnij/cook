@@ -21,6 +21,8 @@ set :ssh_options, {
   forward_agent: true
 }
 
+set :linked_dirs, %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system}
+
 server '139.59.207.181',
   user: 'obroshnij',
   roles: %w{web app}
