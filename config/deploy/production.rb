@@ -25,7 +25,7 @@ set :linked_dirs, %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public
 
 server '139.59.207.181',
   user: 'obroshnij',
-  roles: %w{web app}
+  roles: %w{web app db}
 
 # role-based syntax
 # ==================
