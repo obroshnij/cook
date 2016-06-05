@@ -1,7 +1,6 @@
 default: &default
   adapter: postgresql
   encoding: unicode
-  username: postgres
   password: student4808
   # For details on connection pooling, see rails configuration guide
   # http://guides.rubyonrails.org/configuring.html#database-pooling
@@ -9,4 +8,10 @@ default: &default
 
 development:
   <<: *default
+  username: postgres
   database: cookies_development
+
+production:
+  <<: *default
+  username: obroshnij
+  database: cookies_production

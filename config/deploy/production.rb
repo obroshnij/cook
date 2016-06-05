@@ -23,7 +23,7 @@ set :ssh_options, {
 
 server '139.59.207.181',
   user: 'obroshnij',
-  roles: %w{web app db}
+  roles: %w{web app}
 
 # role-based syntax
 # ==================
