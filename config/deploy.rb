@@ -9,6 +9,11 @@ set :stages, %w(production)
 
 set :rvm_ruby_version, '2.2.2@cook'
 
+set :linked_files, %w{config/database.yml config/secrets.yml config/cloudinary.yml}
+
+set :linked_dirs, %w{log tmp/pids public/uploads public/assets public/system}
+
+
 # set :linked_dirs, %w{
 #   log
 #   tmp/pids
