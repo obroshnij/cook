@@ -273,3 +273,8 @@ input.contact-string {
 	max-width: 250px;
 	max-height: 300px;
 }
+
+ul.navbar-nav li a:hover, ul.navbar-nav li a:visited, ul.navbar-nav li a:active, ul.navbar-nav li a:link {
+	text-decoration: none;
+
+}
