@@ -179,5 +179,13 @@
     <a class="close">×</a>
     <!-- The modal dialog, which will be used to wrap the lightbox content -->    
 </div>
+<script>
+  var elements = $('figcaption h2');
 
+  $.each(elements, function(index, value) {
+    if (value.innerHTML.length > 10) {
+      $('figcaption h2').eq(index).css({"font": "300 1.5em 'Comfortaa', cursive", "transform": "none", "-webkit-transform": "none", "-webkit-transition": "none"});
+    }
+  })
+</script>
 

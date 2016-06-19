@@ -39,7 +39,6 @@ $('.carousel').swipe( {
 
 // map
 
-google.maps.event.addDomListener(window, 'load', init);
     var map;
     function init() {
         var mapOptions = {
