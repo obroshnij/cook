@@ -34,6 +34,7 @@ ActiveAdmin.register Product do
     column :id
     column :name
     column :category
+    column :image
     actions
   end
 

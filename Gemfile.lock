@@ -118,6 +118,7 @@ GEM
       warden (~> 1.2.3)
     domain_name (0.5.20160310)
       unf (>= 0.0.5, < 1.0.0)
+    dynamic_sitemaps (2.0.0)
     enumerize (1.1.1)
       activesupport (>= 3.2)
     erubis (2.7.0)
@@ -283,6 +284,7 @@ DEPENDENCIES
   cloudinary
   coffee-rails (~> 4.1.0)
   devise
+  dynamic_sitemaps
   enumerize
   execjs
   jbuilder (~> 2.0)

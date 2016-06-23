@@ -21,6 +21,8 @@ Rails.application.routes.draw do
       post 'create'
     end
   end
+
+  get 'sitemap' => 'home#sitemap'
   #root to: "welcome#index"
 
   # The priority is based upon order of creation: first created -> highest priority.

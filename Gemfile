@@ -46,6 +46,8 @@ gem 'unicorn'
 gem 'bootstrap-sass'
 gem 'autoprefixer-rails'
 
+gem "dynamic_sitemaps"
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
