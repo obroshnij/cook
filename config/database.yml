@@ -8,7 +8,7 @@ default: &default
 
 development:
   <<: *default
-  username: postgres
+  username: obroshnij
   database: cookies_development
 
 production:
