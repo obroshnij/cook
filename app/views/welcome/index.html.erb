@@ -62,7 +62,7 @@
           <div class="item animated bounceInRight row">
         <% end %>
         <div class="animated slideInLeft col-xs-2">
-          <%= image_tag feedback.feedback_image, width: "100", class: "img-circle img-responsive" %>
+          <%= cl_image_tag feedback.feedback_image, width: "100", class: "img-circle img-responsive" %>
         </div>
       <div  class="col-xs-10">
       <p> <%= feedback.feedback_text %> </p>      
@@ -95,7 +95,7 @@
     <% @partners.try(:each) do |partner| %>
     <div class="partner-item">
   	<figure class="effect-chico">
-          <%= image_tag partner.partner_image, class: 'img-responsive' %>
+          <%= cl_image_tag partner.partner_image, class: 'img-responsive' %>
           <figcaption>
               <p><b><%= link_to partner.partner_name, partner.partner_link, target: '_blank', class: 'item-text' %></b><br><%= link_to partner.partner_description, partner.partner_link, target: '_blank', class: 'item-text'%></p>            
           </figcaption>

@@ -1,6 +1,6 @@
 <% @categories.try(:each) do |cat| %>
     <figure class="effect-oscar  wowload fadeInUp img-normalizer">
-        <%= image_tag cat.image %>
+        <%= cl_image_tag(cat.image, :sign_url => true, q: 10) %>
         <figcaption>
             <h2><%= cat.name %></h2>
             <p><%= cat.description %><br>
