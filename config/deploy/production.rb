@@ -8,6 +8,7 @@
 
 # RVM-specific config
 set :application, 'cook'
+set :deploy_via, :remote_cache
 
 set :deploy_to, '/home/obroshnij'
 
