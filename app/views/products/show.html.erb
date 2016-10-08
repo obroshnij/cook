@@ -4,7 +4,7 @@
     <div id="left_col">
     	<% @product.product_images.try(:each) do |item| %>
     	<div>
-        	<%= cl_image_tag item.image, class: 'product-image' %>
+        	<%= cl_image_tag item.image, :crop=>"mpad", class: 'product-image' %>
         </div>
         <% end %>
     </div>
