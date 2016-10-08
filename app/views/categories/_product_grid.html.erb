@@ -1,6 +1,6 @@
 <% @category.products.try(:each) do |product| %>
     <figure class="effect-oscar  wowload fadeInUp img-normalizer">
-        <%= cl_image_tag product.image, :crop=>"mpad" %>
+        <%= cl_image_tag product.image, :crop=>"mpad", class: 'lazy' %>
         <figcaption>
             <h2><%= product.name %></h2>
             <p><%= product.description %><br>
@@ -8,3 +8,11 @@
         </figcaption>
     </figure>
 <% end %>
+<script>
+$(function() {
+    $("img.lazy").lazyload({
+      threshold : 200,
+      effect : "fadeIn"
+    });
+});
+</script>

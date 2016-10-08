@@ -18,5 +18,6 @@
 //= require touchSwipe.min
 //= require respond
 //= require jquery.blueimp-gallery.min
+//= require jquery.lazyload
 //= require script
 //= require_tree .
