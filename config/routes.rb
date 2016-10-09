@@ -2,7 +2,6 @@ Rails.application.routes.draw do
   devise_for :users, ActiveAdmin::Devise.config
 
   ActiveAdmin.routes(self)
-  root to: 'welcome#index'
 
   resources :categories do
     member do
@@ -23,6 +22,7 @@ Rails.application.routes.draw do
   end
 
   get 'sitemap' => 'home#sitemap'
+  root to: 'welcome#index'
   #root to: "welcome#index"
 
   # The priority is based upon order of creation: first created -> highest priority.

@@ -4,6 +4,9 @@ class WelcomeController < ApplicationController
     @customer_feedbacks = CustomerFeedback.all
     @partners = Partner.all
     @product_counter = Product.all.count
+    respond_to do |format|
+      format.html
+    end
   end
 
   def sitemap
