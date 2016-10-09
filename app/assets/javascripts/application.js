@@ -17,6 +17,7 @@
 //= require bootstrap
 //= require touchSwipe.min
 //= require respond
+//= require thumbnail-slider
 //= require jquery.blueimp-gallery.min
 //= require jquery.lazyload
 //= require script

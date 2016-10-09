@@ -9,7 +9,8 @@ Rails.application.configure do
 
   # Do not eager load code on boot.
   config.eager_load = false
-  config.assets.initialize_on_precompile = false
+  config.assets.initialize_on_precompile = true
+  config.assets.compile = true
 
   # Show full error reports and disable caching.
   config.consider_all_requests_local       = true

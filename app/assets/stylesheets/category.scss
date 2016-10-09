@@ -1,3 +1,12 @@
 // Place all the styles related to the Category controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.item-name {
+  color: white;
+  opacity: 1;
+  background: repeating-linear-gradient(
+    #777 10px,
+    #777 20px
+  );
+}

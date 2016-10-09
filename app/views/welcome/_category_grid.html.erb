@@ -2,7 +2,7 @@
     <figure class="effect-oscar  wowload fadeInUp img-normalizer">
         <%= cl_image_tag(cat.image, :crop=>"mpad", class: 'lazy') %>
         <figcaption>
-            <h2><%= cat.name %></h2>
+            <h2><span class='item-name'><span class='name'><%= cat.name %></span></span></h2>
             <p><%= cat.description %><br>
             <%= link_to 'Больше', category_path(cat) %></p>            
         </figcaption>
