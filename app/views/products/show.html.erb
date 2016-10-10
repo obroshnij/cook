@@ -1,4 +1,9 @@
 <%= render 'shared/global_navigation'%>
+<%= title @product.name %>
+<% set_meta_tags description: @product.description %>
+<% set_meta_tags image_src: @product.image %>
+<% set_meta_tags og: { image: @product.product_images.collect{|image| cloudinary__url_for(image)} } %>
+
 
 <div id="wrap">
     <div id="left_col">

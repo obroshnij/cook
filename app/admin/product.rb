@@ -35,6 +35,9 @@ ActiveAdmin.register Product do
     column :name
     column :category
     column :image
+    column 'Product Images' do |resource|
+      link_to '#Images', admin_product_product_images_path(resource.id)
+    end
     actions
   end
 

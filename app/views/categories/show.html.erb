@@ -1,4 +1,7 @@
 <%= render 'shared/global_navigation'%>
+<%= title @category.name %>
+<% set_meta_tags description: @category.description %>
+<% set_meta_tags image_src: @category.image %>
 
 <div>
           <span class='header-image'><%= cl_image_tag @category.image, class: "img-cat-header" %></span>

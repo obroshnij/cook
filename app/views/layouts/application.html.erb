@@ -4,7 +4,12 @@
   <meta charset="UTF-8" />
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <% set_meta_tags keywords: %w[печеньице печенье выпечка харьков заказ купить лучшая торты вкусное печенья
+                                домашний домашнее hand-made ручной вкусно сладкое натуральное полезно рецепты десерт] %>
+  <% set_meta_tags icon: '/favico.png' %>
+  <% set_meta_tags publisher: "https://www.instagram.com/tania.neshcheret/" %>
 
+  <%= display_meta_tags site: 'Печеньице' %>
   <title>Печеньице - заказ домашней выпечки в Харькове</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
@@ -16,15 +21,9 @@
 	<!-- font awesome -->
 	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 	<!-- bootstrap -->
-	
-
 	<!-- animate.css -->
-
   <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
-
 	<!-- gallery -->
-	
-
 	<!-- favicon -->
 	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
@@ -54,7 +53,7 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-		
+
 <%= yield %>
 
 <!-- wow script -->

@@ -3,6 +3,13 @@ Rails.application.routes.draw do
 
   ActiveAdmin.routes(self)
 
+  namespace :admin do
+    resources :products do
+      resources :product_images do
+      end
+    end
+  end
+
   resources :categories do
     member do
       get 'show'

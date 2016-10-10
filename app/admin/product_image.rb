@@ -13,6 +13,14 @@ ActiveAdmin.register ProductImage do
 #   permitted
 # end
 
+  index do
+    selectable_column
+    id_column
+    column :product
+    column :image
+    actions
+  end
+
 controller do
     def permitted_params
       params.permit!
