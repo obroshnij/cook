@@ -30,3 +30,14 @@
     }
   })
 </script>
+
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org/",
+  "@type": "Product",
+  "name": "<%= @category.name %>",
+  "manufacturer": "Печеньице",
+  "image": "<%= @category.image %>",
+  "description": "<%= @category.description %>"
+}
+</script>

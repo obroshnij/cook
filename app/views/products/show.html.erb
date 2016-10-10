@@ -85,3 +85,13 @@ $(function() {
     });
 });
 </script>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org/",
+  "@type": "Product",
+  "name": "<%= @product.name %>",
+  "manufacturer": "Печеньице",
+  "image": "<%= @product.image %>",
+  "description": "<%= @product.long_description %>"
+}
+</script>
