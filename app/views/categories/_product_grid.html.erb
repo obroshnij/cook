@@ -1,6 +1,6 @@
 <% @category.products.try(:each) do |product| %>
     <figure class="effect-oscar  wowload fadeInUp img-normalizer">
-        <%= cl_image_tag product.image, :crop=>"mpad", class: 'lazy' %>
+        <%= cl_image_tag product.image, :width=>423, :crop=>"thumb", class: 'lazy' %>
         <figcaption>
             <h2><%= product.name %></h2>
             <p><%= product.description %><br>
