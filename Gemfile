@@ -28,8 +28,8 @@ gem 'pg'
 gem 'activeadmin', github: 'activeadmin'
 gem 'devise'
 gem 'carrierwave'
-
 gem 'cloudinary'
+gem 'mini_magick'
 gem 'enumerize'
 gem 'unicorn'
 
