@@ -4,7 +4,7 @@
 <% set_meta_tags image_src: @category.image %>
 
 <div>
-          <span class='header-image'><%= cl_image_tag @category.image, :width=>770, :crop=>"thumb", class: "img-cat-header" %></span>
+          <span class='header-image'><%= cl_image_tag @category.image, :width=>770, :crop=>"thumb", class: "img-cat-header", flags: 'progressive' %></span>
           <span><span class="caption">
             <span class="caption-wrapper">
               <span class='inline-element'>
