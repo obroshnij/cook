@@ -13,11 +13,43 @@
 }
 
 .effect-oscar.category {
-  margin-left:3%;
-  margin-right:3%;
-  width:43%;
-  height: 350px;
-  margin-bottom: 50px;
+    margin-left:3%;
+    margin-right:3%;
+    width:43%;
+    height: 350px;
+    margin-bottom: 50px;
+  }
+
+@media (max-width: 1200px) {
+  .effect-oscar.category {
+    margin-left:3%;
+    margin-right:3%;
+    width:43%;
+    height: 350px;
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 767px) {
+  .effect-oscar.category {
+    margin-left:3%;
+    margin-right:3%;
+    width:43%;
+    height: 150px;
+    margin-bottom: 50px;
+  }
+  
+  h2 {
+      font-size: 0.75em;
+  }
+  #foods figcaption a {
+    border: 1px solid #fff;
+    margin-top: 1em;
+    display: inline-block;
+    color: #fff;
+    padding: 0 2em;
+    font-size: 0.6em;
+  }
 }
 
 .header-image {

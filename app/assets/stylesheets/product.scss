@@ -1,3 +1,28 @@
 // Place all the styles related to the Product controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+@media (max-width: 1200px) {
+  
+}
+
+@media (max-width: 767px) {
+  .header-image img {
+    padding-top:5px;
+    max-width: 100%;
+  }
+
+  .product-details{
+    font-size:0.5em;
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+
+  h4.panel-title{
+    font-size:1em;
+  }
+
+  #foods {
+    padding-top: 1em;
+  }
+}

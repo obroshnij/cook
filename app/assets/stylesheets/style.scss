@@ -134,7 +134,7 @@ p{font-size:1em;line-height: 1.7em; margin-bottom: 1.7em;}
 	h2.text-center{text-align: left;font-size: 1.7em;}
 	h4 {font: 300 1.2em Roboto,Arial,Helvetica;}
 	#partners h2{padding: 0 1em;} 
-	#home {padding-top: 5em;}
+	#home {}
 
 	.partners{display: block;float: left;}
 	.partners img{width: 120px;}
@@ -151,6 +151,14 @@ p{font-size:1em;line-height: 1.7em; margin-bottom: 1.7em;}
 	figure.effect-chico figcaption {padding: 1.5em;}
 	#map{height: 200px;}
 	.footer{padding-bottom: 2em;}
+
+  .effect-oscar.category {
+    margin-left: 3%;
+    margin-right: 3%;
+    width: 43%;
+    height: 150px;
+    margin-bottom: 50px;
+  }
 }
 
 .logo-header{
